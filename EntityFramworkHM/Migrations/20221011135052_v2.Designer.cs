@@ -3,6 +3,7 @@ using System;
 using EntityFramworkHM.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace EntityFramworkHM.Migrations
 {
     [DbContext(typeof(CustomerContext))]
-    partial class CustomerContextModelSnapshot : ModelSnapshot
+    [Migration("20221011135052_v2")]
+    partial class v2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -50,7 +52,7 @@ namespace EntityFramworkHM.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Customer", (string)null);
+                    b.ToTable("Customer");
                 });
 
             modelBuilder.Entity("EntityFramworkHM.Model.orderh", b =>
@@ -85,7 +87,7 @@ namespace EntityFramworkHM.Migrations
 
                     b.HasIndex("customerid");
 
-                    b.ToTable("Orderh", (string)null);
+                    b.ToTable("Orderh");
                 });
 
             modelBuilder.Entity("EntityFramworkHM.Model.orderid", b =>
@@ -123,7 +125,7 @@ namespace EntityFramworkHM.Migrations
 
                     b.HasIndex("itemid");
 
-                    b.ToTable("Orderid", (string)null);
+                    b.ToTable("Orderid");
                 });
 
             modelBuilder.Entity("EntityFramworkHM.Model.product", b =>
@@ -154,7 +156,7 @@ namespace EntityFramworkHM.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Product", (string)null);
+                    b.ToTable("Product");
                 });
 
             modelBuilder.Entity("EntityFramworkHM.Model.orderh", b =>

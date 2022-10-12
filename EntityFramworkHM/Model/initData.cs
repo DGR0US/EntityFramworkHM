@@ -98,7 +98,7 @@
 
             orderh oh = new orderh();
             oh.doc_no = "dn001";
-            oh.doc_date = new DateTime(2022 - 08 - 09);
+            oh.doc_date = new DateTime(2022 , 08 , 09);
             oh.amount = 50;
             oh.vat = (oh.amount * 7) / 100;
             oh.net_amount = oh.amount + oh.vat;
@@ -108,7 +108,7 @@
 
             orderh oh2 = new orderh();
             oh2.doc_no = "dn002";
-            oh2.doc_date = new DateTime(2022 - 10 - 05);
+            oh2.doc_date = new DateTime(2022 , 10 , 05);
             oh2.amount = 90;
             oh2.vat = (oh2.amount * 7) / 100;
             oh2.net_amount = oh2.amount + oh2.vat;
@@ -118,7 +118,7 @@
 
             orderh oh3 = new orderh();
             oh3.doc_no = "dn003";
-            oh3.doc_date = new DateTime(2022 - 01 - 30);
+            oh3.doc_date = new DateTime(2022 , 01 , 30);
             oh3.amount = 250;
             oh3.vat = (oh3.amount * 7) / 100;
             oh3.net_amount = oh3.amount + oh3.vat;
@@ -128,7 +128,7 @@
 
             orderh oh4 = new orderh();
             oh4.doc_no = "dn004";
-            oh4.doc_date = new DateTime(2022 - 02 - 20);
+            oh4.doc_date = new DateTime(2022 , 02 , 20);
             oh4.amount = 70;
             oh4.vat = (oh4.amount * 7) / 100;
             oh4.net_amount = oh4.amount + oh4.vat;
@@ -138,7 +138,7 @@
 
             orderh oh5 = new orderh();
             oh5.doc_no = "dn005";
-            oh5.doc_date = new DateTime(2021 - 04 - 12);
+            oh5.doc_date = new DateTime(2021 , 04 , 12);
             oh5.amount = 25;
             oh5.vat = (oh5.amount * 7) / 100;
             oh5.net_amount = oh5.amount + oh5.vat;
